@@ -34,8 +34,11 @@ senerio based questions
 how would you approach this task?
 
 step1:- stop the running container using "docker stop"
+
 step2:- pull the latest version of ther docker image with updates code using "docker pull"
+
 step3:- Run a new container with the updayes image, ensuring to map volumes and ports using "docker run"
+
 step4:- verify the new container is running correctly
 
 
