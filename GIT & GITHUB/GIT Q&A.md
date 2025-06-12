@@ -16,4 +16,6 @@ GIT and GITHUB
 
 4) explain the git workflow ?
 
-5) 	how can we clone only specific branch
+5) how can we clone only specific branch
+
+6) what is git cherry pick ?
