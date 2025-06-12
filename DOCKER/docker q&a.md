@@ -30,9 +30,10 @@ DOCKER
 	
 senerio based questions
 
-1) you have a Docker container running a web server, but you need to update the application code inside it.
+## senerio 1
+* you have a Docker container running a web server, but you need to update the application code inside it.
 how would you approach this task?
-
+**Answer**:
 step1:- stop the running container using "docker stop"
 
 step2:- pull the latest version of ther docker image with updates code using "docker pull"
@@ -43,11 +44,11 @@ step4:- verify the new container is running correctly
 
 
 ## senerio 2
-** you team is deploying a microservices architecture using Docker containers.
+* you team is deploying a microservices architecture using Docker containers.
 how would you orchestrate and manage these containers effectively
 
 ## TASK : orchestrating microservices Architecture
-
+**Answer**:
 i would use docker swarm or kubernetes for container orchestration. Both tools facilitate
 management and scaling across multiple hosts.
 	
