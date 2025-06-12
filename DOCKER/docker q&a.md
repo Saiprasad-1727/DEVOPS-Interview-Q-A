@@ -33,6 +33,7 @@ senerio based questions
 ## senerio 1
 * you have a Docker container running a web server, but you need to update the application code inside it.
 how would you approach this task?
+
 **Answer**:
 step1:- stop the running container using "docker stop"
 
