@@ -97,5 +97,5 @@ They relate to DevOps as they:
 
 **Answer:**
 
-Blue-green deployment is a release management strategy that reduces downtime and risk by running two production environments, referred to as Blue and Green. At any time, only one environment (say, Blue) is live, while the other (Green) is idle. New versions of the application are deploykd to the idle environment. Once the new version is verified, traffic is switched from the current environment to the new one. This strategy allows for quick rollback if needed.
+Blue-green deployment is a release management strategy that reduces downtime and risk by running two production environments, referred to as Blue and Green. At any time, only one environment (say, Blue) is live, while the other (Green) is idle. New versions of the application are deployed to the idle environment. Once the new version is verified, traffic is switched from the current environment to the new one. This strategy allows for quick rollback if needed.
 
