@@ -1,7 +1,9 @@
 DevOps critical Real-Time Interview Q&A
 
 ## 1. what is DevOps and how does it differ from traditional IT Practices?
+
 **Answer**
+
 Devops is a set of practices that combines software development (DEV) and IT Operations (OPS). It aims to shorten the system development life cycle and provides continuous delivery with high software and operations into silos, DevOps promotes collaboration and communication between these functions, enbling faster and more reliable software releases.
 
 ## 2. What are the key componenets of a CI/CD pipeline?
@@ -26,5 +28,7 @@ IAC is the practise of managing and provisioning computing infrastructure throug
 - **AWS CLoudFormation** A service for automating the setup in AWS resources
 
 ## 4. Explain the concept of "immutable infrastructure."
+
 **Answer**
+
 Immutable infrastructure is a design prardigm in which server are never modified after they are deployed. Instead, when changes are needed, new servers are built from a common image with the necessary changes, and the old servers are decommissioned. This approach helps in avoiding configuration drift, making deployment more predictable and easier to troubleshoot.
