@@ -62,3 +62,33 @@ K8s is an open-source container orchestration platform that automates the deploy
 - **Scaling application** Automatically scales applications based on demand.
 - **Self-healing** Automatically restarts failed containers and replaces unhealthy onec.
 - **Service discovery and load balancing:** Distributes network traffic across container.
+
+## 8. What strategies would you use for monitoring and logging in a microservices architecture ?
+
+**Answer**
+
+For monitoring and logging in a microservices architecture:
+
+- **Centralized Logging:** Use tools like ELK stack for Fluentd to aggregate logs for different services.
+- **Ddistributed Tracing:** Tools like Jaegar or zipkin to trace requests a they flow through various services.
+- **Metrics collection:** Use prometheus or grafana for collecting and visualizing metrics form microservices.
+-**Alerting:** set up alerts based on monitoring data using tools like pagerDuty or Opsgenie
+
+## 9. Can you describe a challenging DevOps problem you faces and how you resolved it ?
+
+**Answer**
+
+**Scenario:** We experienced frequent application dewntimes during deployment due to inconsistent environment between development, staging and production.
+
+**Resolution:** We implemented Infrastructure as code (IAC) using terraform to standardize environment provisioning across all stages. Additionally, we adopted Docker for containerization, ensuring that tha same container images were used from development throuh production. This resolved the environement inconsistencies and reduced downtime during deployments.
+
+## 10. How do you ensure security in a DevOps pipeline ?
+
+**Answer**
+
+To ensure security in a DevOps pipeline:
+- **Integrate security testing:** Incorporate static code analysis, Vulnerability scanning, and dependeny checking into the CI/CD pipeline using tools like Sonarqube, Synk, or OWASP Dependency-check.
+- **Secrets Management:** Use secure valuts like Hashicorp Vault or AWS secrets manager to manage Sensitive information.
+- **Least Privilege:** Apply the principle of least privilege to all system and services.
+- **Continuous Monitoring:** Implement continuous monitorin and alerting for security events and anomalies
+- **Compliance Automation:** use tools to automate compliance checks and ensure adherence to security policies and standards.
