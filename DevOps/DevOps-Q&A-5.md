@@ -96,3 +96,25 @@ to adjust resources dynamically, such as resizing instances or adjusting autosca
 policies. Implementing quotas and budgets helps control costs. Regularly reviewing resource
 usage and optimizing configuratichs ensures efficient utilization of cloud resources.
 
+## 9. Backup and Recovery Failures
+
+**Question:** How do you handle failures in backup and recovery processes?
+
+**Answer:**
+
+When backup or recovery processes fail, I first review logs and error messages 
+to identify the cause. Common issues include network problems, storage limitations, or
+configuration errors. I address these issues by fixing the underlying cause and rerunning 
+the backup or recovery process. Ensuring that backups are scheduled and verified regularly,
+and having multiple recovery points, helps in minimizing data loss and downtime. 
+
+## 10. Application Rollbacks 
+
+**Question:** How do you manage application rollbacks in case of deployment issues? 
+
+**Answer:** 
+
+To manage application rollbacks, I ensure that we have a robust version control 
+system and automated deployment scripts. If a deployment causes issues, I quickly roll back 
+to the previous stable version using these scripts. I maintain a clear rollback plan and 
+Ensure that all dependencies are versioned and tested. Post-rollback, I analyze the deployment failures to prevent recurrence and improve our deployment process 
