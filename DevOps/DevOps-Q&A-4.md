@@ -32,3 +32,33 @@ IAC is the practise of managing and provisioning computing infrastructure throug
 **Answer**
 
 Immutable infrastructure is a design prardigm in which server are never modified after they are deployed. Instead, when changes are needed, new servers are built from a common image with the necessary changes, and the old servers are decommissioned. This approach helps in avoiding configuration drift, making deployment more predictable and easier to troubleshoot.
+
+## 5. How do you handle comfiguration management in a DevOps environment ?
+
+**Answe**
+
+Configuration management in a DevOps environment involves using tools to automate the deployment and configuration of software and environment. Popular tools include:
+- **Ansible** uses YAML-based playbooks for automation.
+- **chef** used a domain-specific language (DSL) based on RUbY for writing configuration scripts
+- **Puppet** uses its own declarative language to manage infrastructure as code.
+- **Saltstack** uses oythin and yaml for configuration management and automation
+
+## 6. What is containerization and how des it benfit IN DEVOPS ?
+**ANSWER**
+
+containerization involves encapsulating an application and its dependencies into a container that can run on any computing encironment. The benefits include:
+
+-- **Portability** Containers can run consistently across different environments.
+- **Isolation** Applications run in isolated containers, reducing conflicts.
+- **Scalability** Containers can be easily scaled up or down to handle varying loads.
+- **Resiurce Efficiency:** Containers share the host system's Kernel, Mking them nore efficicent than virtual machines.
+
+## 7. How does k8s facilitate DevOps practices ?
+
+**ANswer** 
+
+K8s is an open-source container orchestration platform that automates the deployment, Scaling, and management of containerized applications. It facilities DevOps practices by:
+- **AUtomating Deployment** Ensures application are deployed in a reliable and repeatable way.
+- **Scaling application** Automatically scales applications based on demand.
+- **Self-healing** Automatically restarts failed containers and replaces unhealthy onec.
+- **Service discovery and load balancing:** Distributes network traffic across container.
