@@ -59,7 +59,7 @@ notifying relevant stakeholders, containing the fhreat, eradicating the root cau
 recovering affected systems. After the incident is resolved, I conduct a post-mortem to 
 understand what happened and implement measures to prevent future incidents.
 
-#4 6. High Availability Issues 
+## 6. High Availability Issues 
 
 **Question:** How do you ensure high availability of services? 
 
@@ -74,7 +74,7 @@ significant downtime. 
 
 ## 7. Code Integration Conflicts 
 
-**Question: ** How do you handle code integration conflicts in a CI/CD pipeline? 
+**Question:** How do you handle code integration conflicts in a CI/CD pipeline? 
 
 **Answer:**
 
@@ -86,7 +86,7 @@ passes all automated tests in the CI pipeline before it is merged into the main 
 
 ## 8. Resource Allocation Problems
 
-**Question: ** How do you manage resource allocation issues in a cloud environment?
+**Question:** How do you manage resource allocation issues in a cloud environment?
 
 **Answer:** 
 
