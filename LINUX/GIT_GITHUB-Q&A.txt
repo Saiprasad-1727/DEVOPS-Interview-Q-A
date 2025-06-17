@@ -1,19 +1,48 @@
-GIT and GITHUB
+## 1. **How can we chnage the permission for a file under Linux ?**
 
-1) what will happen if we do git fetch
+* To change the permissions of a file in Linux, use the `chmod` command. For example, if you have a file called `example.txt` and you went to give read and write permissions to others, you would use:
 
-	git fetch + git merge = git pull
-	
-2) Git merge vs git rebase
+```bash
+chmod 640 example.txt
+```
 
-	git merge : a new commit will be created and branches get merged
-	git rebase : a linear form of commits gets created
-	
-	newer commits will be places last in the git history
-	older commits will be formed in first position
+## 2. **How can we list the partitions in linux ?**
 
-3) explain the branching strategy that are using in your organization
+* To list the partitions in linux, you can use the `lsblk` or `fdisk -l` commands, For instance:
 
-4) explain the git workflow ?
+```bash
+lsblk
+```
+or
 
-5) how can we clone only specific branch
+```bash
+sudo fdisk -l
+```
+* this is useful when setting up a new disk or troubleshooting storage issues on your server.
+
+## 3. **what is the command to find the current load average in the system ? **
+
+* The `uptime` or `top` commands can be used to find the current load average:
+
+```bash
+uptime
+```
+or 
+
+```bash
+top
+```
+
+## 4. how to check all the running processes ?
+
+* to check all the running processes, use the `ps` command with the `aux` options
+
+```bash
+ps -aux
+```
+
+or 
+
+```bash
+top
+```
