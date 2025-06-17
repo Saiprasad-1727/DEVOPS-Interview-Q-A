@@ -16,21 +16,16 @@
     
 ##WXAMPLE
 
-# Use an official Node.js base image
+Use an official Node.js base image
 FROM node:18
-
-# Set the working directory
+Set the working directory
 WORKDIR /usr/src/app
-
-# Copy package.json and install dependencies
+Copy package.json and install dependencies
 COPY package*.json ./
 RUN npm install
-
-# Copy your app source code
+Copy your app source code
 COPY . .
-
-# Expose port your app runs on
+Expose port your app runs on
 EXPOSE 3000
-
-# Start the app
+Start the app
 CMD ["npm", "start"]
