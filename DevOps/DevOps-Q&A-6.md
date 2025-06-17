@@ -20,7 +20,7 @@ sudo fdisk -l
 ```
 * this is useful when setting up a new disk or troubleshooting storage issues on your server.
 
-## 3. **what is the command to find the current load average in the system ? **
+## 3. **what is the command to find the current load average in the system ?**
 
 * The `uptime` or `top` commands can be used to find the current load average:
 
