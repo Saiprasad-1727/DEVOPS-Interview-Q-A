@@ -1,4 +1,4 @@
-## 13. **What is the Dockerfile and what are some instructions ?
+## 1. **What is the Dockerfile and what are some instructions ?
 
 * A Dockerfile is a script containing a series of instructions on how to build a Docker image. Key instructions include:
 
@@ -29,3 +29,14 @@ Expose port your app runs on
 EXPOSE 3000
 Start the app
 CMD ["npm", "start"]
+
+## 2. Difference between ENV and ARG in Docker ?
+
+- **ARG**: Defines a variable that uses can pass at build-time
+- **ENV**: Sets an environment variable in the container at run-time.
+
+* Example:
+```Dockerfile
+ARG build_version
+ENV APP_VERSION $build_version
+```
