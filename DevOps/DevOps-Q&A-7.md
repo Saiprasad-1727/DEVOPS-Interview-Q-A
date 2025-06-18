@@ -63,3 +63,57 @@ aws s3api put-bucket-policy --bucket my-app-logs --policy file://policy. json :
 ```bash
 aws s3api put-bucket-encryption --bucket my-app-logs --server-side-encryption-configuration '{"Rules":[{"ApplyServerSideEncryptionByDefault":{"SSEAlgorithm":"AES256"}}]}'
 ```
+
+
+## 4. Write an ansible playbook to install NGINX on a remote server.
+
+**Answer**
+
+```yaml
+---
+    - name: Install NGINX
+      hosts: webservers
+      become: yes
+      tasks:
+        - name: Update apt cache
+          apt:
+            update_cache: yes
+        - name: Install NGINX
+          apt:
+            name: nginx
+            state: present
+        - name: Ensure NGINX is running
+          service:
+            name: nginx
+            state: started
+            enabled: yes
+```            
+
+
+## 5 . how would you set uo prometheus to monitor a kubernetes cluster ?
+
+**Answer**
+
+- 1 : create a namespace for monitoring
+
+```bash
+kubectl create namespace monitoring
+```
+
+- 2 : use helm to install prometheus
+
+``bash
+helm install prometheus stable/prometheus --name monitoring
+```
+- 3 : verify the installation
+
+```bash
+kubectl get pods -n monitoring
+```
+
+- 4 access the prometheus dashboard
+```bash
+kubectl port-forward -n monitoring deploy/prometheus-server 9090
+```
+Open `http://localhost:9090` in a browser.
+
