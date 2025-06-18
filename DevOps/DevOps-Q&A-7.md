@@ -2,7 +2,7 @@
 
 **Answer**
 
-    - **Step 1:** Open jenkins and click on "new item"
+    - **Step 1:**Open jenkins and click on "new item"
     - **step 2:** Enter a name for the job and select "Freestyle project", Then click "OK".
     - **Step 3:** In the "SOurce code management" Section, select "Git" and enter the repo url.
     - **step 4:** In the "build Triggers" section, choose "Github Hook trigger for thr GITScm pullling."
