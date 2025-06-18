@@ -34,3 +34,32 @@ docker stop $CONTAINER_NAME && docker rm $CONTAINER_NAME
 #run the docker container
 docker run -d -p $PORT:80 --name $CONTAINER_NAME $IMAGE_NAME
 ```
+
+
+## 3. How would you create and configure an S3 bucket using AWS CLT for storing application logs ? 
+
+**ANSWER**
+
+ - **step 1:** Create the bucket
+
+    ```bash
+    aws s3 mb s3://my-app-logs
+    ```
+
+ - **Step 2:** Apply a bucket policy to allow public read access (if needed)
+ 
+```bash 
+aws s3api put-bucket-policy --bucket my-app-logs --policy file://policy. json :
+```   
+
+ - **Step 3:** enable versioning on the bucket
+
+```bash
+  aws s3api put-bucket-versioning --bucket my-app-logs --versioning-configuretion Statuss=Enabled
+```
+
+ - **Step 4:** Enable server-side encryption
+
+```bash
+aws s3api put-bucket-encryption --bucket my-app-logs --server-side-encryption-configuration '{"Rules":[{"ApplyServerSideEncryptionByDefault":{"SSEAlgorithm":"AES256"}}]}'
+```
