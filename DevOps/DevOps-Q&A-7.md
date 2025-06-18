@@ -1,7 +1,7 @@
-## 1. 
-How do you create a jenkins job to build a maven project from a github repo ?
+## 1.  How do you create a jenkins job to build a maven project from a github repo ?
 
 **Answer**
+
     - **Step 1:** Open jenkins and click on "new item"
     - **step 2:** Enter a name for the job and select "Freestyle project", Then click "OK".
     - **Step 3:** In the "SOurce code management" Section, select "Git" and enter the repo url.
