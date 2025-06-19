@@ -177,3 +177,39 @@ deploy:
 
 **step 2:** push the `.gitlab-ci.yml` file to your repository and observe the pipeline executio in GitLab.
 
+## 8. Describe the steps to set up a reverse proxy with NGINX for a web application running on port 3000 ?
+
+**Answer**
+
+**step 1:** Install NGINX
+```bash
+sudo apt update
+sudo apt install nginx
+```
+
+**step 2:** Configure NGINX
+- Edit the default configuration file `/etc/nginx/sites-available/default`
+```nginx
+server{
+    listen 80;
+
+    server_name your_domain.com;
+
+    location / {
+        proxy_pass http://localhost:3000; 
+        proxy_http_version 1.1; 
+        proxy_set_header Upgrade $http_upgrade;:
+        proxy_set_header Connection ‘upgrade’; 
+        proxy_set_header Host $host; 
+        proxy_cache_bypass $http_ upgrade; 
+    
+    
+    }
+}
+```
+
+**Step 3:**Test and reload NGINX
+```bash 
+sudo nginx -t 
+sudo systemctl restart nginx :
+```
