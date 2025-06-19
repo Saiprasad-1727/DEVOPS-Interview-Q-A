@@ -117,3 +117,27 @@ kubectl port-forward -n monitoring deploy/prometheus-server 9090
 ```
 Open `http://localhost:9090` in a browser.
 
+
+## 6. Write a script to back up a MySQL database and store the backup in an S# bucket
+
+**ANSWER**
+
+```bash
+#!/bin/bash
+
+# Variables
+DB_NAME="mydatabase"
+DB_USER="mysuer"
+DB_PASS="mypassword"
+BACKUP_NAME="backup_$(date +%F).sql"
+S3_BUCKER="s3:??mydatabase-backups"
+
+#create backup
+mysqldump -u $DB_USER -p$DB_PASS $DB_NAME > /tmp/$BACKUP_NAME
+
+#upload to s3
+aws s3 cp /tmp/$BACKUP_NAME $S3_BUCKET
+
+# remove local backup
+rm /tmp/$BACKUP_NAME
+```
