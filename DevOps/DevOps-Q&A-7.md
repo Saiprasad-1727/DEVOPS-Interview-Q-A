@@ -141,3 +141,39 @@ aws s3 cp /tmp/$BACKUP_NAME $S3_BUCKET
 # remove local backup
 rm /tmp/$BACKUP_NAME
 ```
+
+
+
+## 7. How would you configure GitLab CI/CD to deploy a node.js application ?
+
+**Answer**
+
+**step 1:** create `.gitlab-ci.yml`
+in the root of your project
+
+```yaml
+stages:
+    - install
+    - test
+    - deploy
+
+install:
+    stage: install
+    script:
+        - npm install
+
+test:
+    stage: test
+    script:
+      - npm test
+
+deploy:
+    stage: deploy
+    script:
+       - npm run deploy
+    only:
+        - main
+```
+
+**step 2:** push the `.gitlab-ci.yml` file to your repository and observe the pipeline executio in GitLab.
+
